@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <title>Poptip - poptip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="nico 0.2.3" />
+    <link type="image/x-icon" href="./static/css/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="./static/css/normalize.css" />
+    <link rel="stylesheet" href="./static/css/site.css" />
+    <link rel="stylesheet" href="./static/css/solarized.css" />
+    <script src="http://static.alipayobjects.com/seajs/1.3.1/sea.js"></script>
+    <script src="./static/js/arale-helper.js"></script>
+    <script src="./static/js/site.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36247332-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  (function() {
+    var data;
+    seajs._package = data = {"name":"poptip","version":"1.0.0","root":"alice","description":"气泡提示组件。","homepage":"","author":"","repository":{"type":"git","url":"https://github.com/aliceui/poptip"},"bugs":{"url":"https://github.com/aliceui/poptip/issues"},"license":"MIT","dependencies":{},"tests":["poptip"],"output":{"poptip.css":"."}}
+    data.dependencies && (delete data.dependencies['$'])
+    data.devDependencies && (delete data.devDependencies['$'])
+
+    seajs.config({ alias: data.dependencies })
+    seajs.config({ alias: data.devDependencies })
+    seajs.config({ alias: {} })
+
+    // for alice
+    for(var dep in data.dependencies) {
+        seajs.use(dep);
+    }
+  })();
+</script>
+    <!--[if lt IE 9]>
+    <script src="./static/js/html5shiv.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div id="body-wrapper">
+      <aside id="sidebar-wrapper">
+        <h1><a href="./">Poptip</a><sup class="package-root"><a href="/">alice</a></sup></h1>
+        <p class="version">当前版本：<a href="http://aralejs.org/docs/online-status.html#alice-poptip" title="点击查看此组件发布情况">1.0.0</a></p>
+        <p class="description">气泡提示组件。</p>
+        <a class="source" href="https://github.com/aliceui/poptip" target="_blank">View the Project</a>
+      </aside>
+      <div id="content-wrapper">
+        <div id="content">
+<article class="hentry">
+  <h1 class="entry-title">poptip</h1>
+  <div class="entry-content">
+    <p>气泡提示组件，带透明边框。</p>
+
+<hr/>
+<h2 id="%E6%BC%94%E7%A4%BA">演示</h2>
+<p><link type="text/css" rel="stylesheet" media="screen" href="src/poptip.css"></p>
+
+<style>
+.nico-insert-code {
+    overflow: hidden;
+    height: 80px;
+}
+</style>
+<h3 id="%E6%A0%87%E5%87%86%E6%8F%90%E7%A4%BA%E6%A1%86">标准提示框</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+        <div class="ui-poptip-container">
+            <div class="ui-poptip-arrow ui-poptip-arrow-10">
+                <em>◆</em>
+                <span>◆</span>
+            </div>
+            <a href="javascript:;" class="ui-poptip-close">×</a>
+            <div class="ui-poptip-content">
+                我是内容我是内容我是内容我是内容我是内容我是内容
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-10"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-close"</span>&gt;</span>×<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+                我是内容我是内容我是内容我是内容我是内容我是内容
+            <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="%E5%86%85%E5%AE%B9%E5%A4%8D%E6%9D%82%E4%BA%9B">内容复杂些</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+        <div class="ui-poptip-container">
+            <div class="ui-poptip-arrow ui-poptip-arrow-10">
+                <em>◆</em>
+                <span>◆</span>
+            </div>
+            <a href="javascript:;" class="ui-poptip-close">×</a>
+            <div class="ui-poptip-content">
+                <div>我是内容。</div>
+                <div>我是内容我是内容我是内容。</div>
+                <div>
+                    <a href="https://app.alipay.com/xxxx" target="_blank">现在使用</a>
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-10"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-close"</span>&gt;</span>×<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span>&gt;</span>我是内容。<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span>&gt;</span>我是内容我是内容我是内容。<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://app.alipay.com/xxxx"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span>&gt;</span>现在使用<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">div</span>&gt;</span>        
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="%E6%B2%A1%E6%9C%89%E5%85%B3%E9%97%AD%E6%8C%89%E9%92%AE">没有关闭按钮</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">    
+        <div class="ui-poptip-arrow ui-poptip-arrow-10">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>    
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-10"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="%E4%B8%A4%E7%82%B9%E9%92%9F%E4%BD%8D%E7%BD%AE%E7%AE%AD%E5%A4%B4">两点钟位置箭头</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-2">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-2"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="11%E7%82%B9%E9%92%9F%E4%BD%8D%E7%BD%AE">11点钟位置</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-11">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-11"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="1%E7%82%B9%E9%92%9F%E4%BD%8D%E7%BD%AE">1点钟位置</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-1">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-1"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="5%E7%82%B9%E9%92%9F%E4%BD%8D%E7%BD%AE">5点钟位置</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-5"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="7%E7%82%B9%E9%92%9F%E4%BD%8D%E7%BD%AE">7点钟位置</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-7">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-7"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+            我是内容我是内容我是内容我是内容我是内容我是内容
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="%E8%93%9D%E8%89%B2%E6%8F%90%E7%A4%BA%E6%A1%86">蓝色提示框</h3>
+<div class="nico-insert-code"><div class="ui-poptip ui-poptip-blue">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-10">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容我是内容我是内容我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip ui-poptip-blue"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-10"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>我是内容我是内容我是内容我是内容我是内容我是内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="%E8%93%9D%E8%89%B2%E6%A1%865%E7%82%B9%E9%92%9F%E4%BD%8D%E7%BD%AE">蓝色框5点钟位置</h3>
+<div class="nico-insert-code"><div class="ui-poptip ui-poptip-blue">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容我是内容我是内容我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip ui-poptip-blue"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-5"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>我是内容我是内容我是内容我是内容我是内容我是内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="%E7%99%BD%E8%89%B2%E6%A1%86">白色框</h3>
+<div class="nico-insert-code"><div class="ui-poptip ui-poptip-white">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容我是内容我是内容我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip ui-poptip-white"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-5"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>我是内容我是内容我是内容我是内容我是内容我是内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div><h3 id="%E5%AE%BD%E9%AB%98%E9%9C%80%E8%A6%81%E8%AE%BE%E7%BD%AE%E5%9C%A8-ui-poptip-container-%E4%B8%8A">宽高需要设置在 ui-poptip-container 上</h3>
+<div class="nico-insert-code"><div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container" style="width: 300px; height: 70px;">        
+        <div class="ui-poptip-arrow ui-poptip-arrow-11">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-shadow"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-container"</span> <span class="attribute">style</span>=<span class="value">"width: 300px; height: 70px;"</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-arrow ui-poptip-arrow-11"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">em</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span>&gt;</span>◆<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-poptip-content"</span>&gt;</span>
+            我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre></div>
+  </div>
+</article>
+</div>
+      </div>
+      
+    </div>
+    <div id="footer-wrapper">
+      <footer>
+        <p class="powered">
+        <a href="http://aralejs.org">Arale</a> •
+        <a href="http://aliceui.org">Alice</a> •
+        <a href="https://github.com/spmjs/spm">spm</a> •
+        <a href="http://lab.lepture.com/nico/">nico</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
