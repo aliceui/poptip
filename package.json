@@ -2,15 +2,15 @@
     "name": "poptip",
     "version": "1.0.0",
     "root": "alice",
-    "description": "",
+    "description": "气泡提示组件。",
     "homepage": "",
     "author": "",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/aliceui/poptip"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/aliceui/poptip/issues"
     },
     "license": "MIT",
     "dependencies": {
