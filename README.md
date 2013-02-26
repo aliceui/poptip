@@ -15,6 +15,9 @@
     overflow: hidden;
     height: 80px;
 }
+.ui-poptip {
+    position: absolute;
+}
 </style>
 
 ### 标准提示框
