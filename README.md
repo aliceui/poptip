@@ -4,6 +4,8 @@
 
 气泡提示组件，带透明边框。
 
+> 注意，宽高需要设置在 ui-poptip-container 上。
+
 ---
 
 ## 演示
@@ -218,20 +220,3 @@
 </div>
 ````
 
-### 宽高需要设置在 ui-poptip-container 上
-
-````html
-<div class="ui-poptip">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container" style="width: 300px; height: 70px;">        
-        <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em>◆</em>
-            <span>◆</span>
-        </div>
-        <div class="ui-poptip-content">
-            我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
-        </div>
-    </div>
-    </div>
-</div>
-````
