@@ -164,29 +164,6 @@ a.ui-poptip-close:hover {
     left: 0;
 }
 
-.ui-poptip-icon {
-    float: left;
-    display: inline;
-    margin-right: 6px;
-    width: 50px;
-    height: 42px;
-}
-
-.ui-poptip-content {
-    float: none;
-    display: inline;
-    *zoom: 1;
-}
-
-.ui-poptip-content:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
 /* ie9 filter */
 :root .ui-poptip-shadow {
     FILTER: none\9;
