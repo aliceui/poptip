@@ -170,6 +170,7 @@ a.ui-poptip-close:hover {
 :root .ui-poptip-shadow {
     FILTER: none\9;
 }
+
 /* 蓝色 */
 .ui-poptip-blue {
     color: #4d4d4d;
@@ -185,11 +186,11 @@ a.ui-poptip-close:hover {
     border: 1px solid #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow em, .ui-poptip-blue .ui-poptip-arrow-left em, .ui-poptip-blue .ui-poptip-arrow-right em {
+.ui-poptip-blue .ui-poptip-arrow em {
     color: #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow span, .ui-poptip-blue .ui-poptip-arrow-left span, .ui-poptip-blue .ui-poptip-arrow-right span {
+.ui-poptip-blue .ui-poptip-arrow span {
     color: #F8FCFF;
 }
 /* 白色 */
@@ -207,11 +208,11 @@ a.ui-poptip-close:hover {
     border: 1px solid #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow em, .ui-poptip-white .ui-poptip-arrow-left em, .ui-poptip-white .ui-poptip-arrow-right em {
+.ui-poptip-white .ui-poptip-arrow em {
     color: #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow span, .ui-poptip-white .ui-poptip-arrow-left span, .ui-poptip-white .ui-poptip-arrow-right span {
+.ui-poptip-white .ui-poptip-arrow span {
     color: #fff;
 }
 
