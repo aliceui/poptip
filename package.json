@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "root": "alice",
     "description": "气泡提示组件。",
+    "keywords": [
+        "气泡"
+    ],
     "homepage": "",
     "author": "",
     "repository": {
