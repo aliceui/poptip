@@ -27,7 +27,7 @@
     background-color: #FFFCEF;
     border: 1px solid #ffbb76;
     border-radius: 2px;
-    padding: 5px 22px 5px 10px;
+    padding: 5px 15px;
     zoom: 1;
     _display: inline;
 }
@@ -113,9 +113,7 @@ a.ui-poptip-close:hover {
 /* ui-poptip-arrow-1 */
 .ui-poptip-arrow-2 {
     top: 6px;
-    right: 8px;
-    *right: 7px;
-    right: 7px\0;
+    right: 7px;
 }
 
 .ui-poptip-arrow-2 em {
