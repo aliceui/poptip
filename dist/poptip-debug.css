@@ -1,5 +1,4 @@
-
-/** alice/poptip/1.0.0/poptip.css **/
+/*! define alice/poptip/1.0.0/poptip-debug.css */
 /* alice.poptip 样式模块 */
 
 @charset "utf-8";
@@ -212,4 +211,3 @@ a.ui-poptip-close:hover {
 .ui-poptip-white .ui-poptip-arrow span {
     color: #fff;
 }
-
