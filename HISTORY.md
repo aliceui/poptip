@@ -4,7 +4,7 @@
 
 ## 1.1.0
 
-`tag:improved` 箭头改用 border 进行实现，使各浏览器效果基本一致。
+`tag:improved` 箭头改用 [border](http://www.css88.com/demo/border/border1.html) 进行实现，使各浏览器效果基本一致。
 
 ## 1.0.0
 
