@@ -1,4 +1,4 @@
-/*! define alice/poptip/1.0.0/poptip-debug.css */
+/*! define alice/poptip/1.1.0/poptip-debug.css */
 /* alice.poptip 样式模块 */
 
 @charset "utf-8";
@@ -78,88 +78,121 @@ a.ui-poptip-close:hover {
     background: linear-gradient(top, #FFE5CA, #FFCC98);
 }
 
-.ui-poptip-arrow, .ui-poptip-arrow em, .ui-poptip-arrow span {
+.ui-poptip-arrow {
     position: absolute;
-    font-size: 14px;
-    font-family: SimSun, Hiragino Sans GB;
-    font-style: normal;
-    line-height: 21px;
     z-index: 10;
     *zoom: 1;
 }
 
-.ui-poptip-arrow em {
-    color: #ffbb76;
-}
-
-.ui-poptip-arrow span {
-    color: #FFFCEF;
+.ui-poptip-arrow em, .ui-poptip-arrow span {
+    position: absolute;
+    *zoom: 1;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    _border-color:tomato;
+    _filter:chroma(color=tomato); /* http://blog.sina.com.cn/s/blog_6283c54a0100f7ae.html */
+    border-style: solid;
+    overflow: hidden;
     top: 0;
     left: 0;
 }
 
-/* ui-poptip-arrow-10 */
+/* 箭头用 border 实现 http://www.css88.com/demo/border/border1.html */
+
+/* 箭头在左边 10 */
 
 .ui-poptip-arrow-10 {
-    top: 6px;
     left: -6px;
+    top: 10px;
 }
 
 .ui-poptip-arrow-10 em {
     top: 0;
     left: -1px;
+    border-right-color: #ffbb76;
+    border-width: 6px 6px 6px 0;    
 }
-/* ui-poptip-arrow-1 */
+
+.ui-poptip-arrow-10 span {
+    border-right-color: #FFFCEF;
+    border-width: 6px 6px 6px 0;
+}
+
+/* 箭头在右边 2 */
+
 .ui-poptip-arrow-2 {
-    top: 6px;
-    right: 7px;
+    top: 10px;
+    right: 0;
 }
 
 .ui-poptip-arrow-2 em {
     top: 0;
     left: 1px;
+    border-left-color: #ffbb76;
+    border-width: 6px 0 6px 6px;
 }
+
+.ui-poptip-arrow-2 span {
+    border-left-color: #FFFCEF;
+    border-width: 6px 0 6px 6px;
+}
+
 /* ui-poptip-arrow-11 */
+.ui-poptip-arrow-11 em,
+.ui-poptip-arrow-11 span {
+
+}
+
+/* 箭头在上边 1 11 */
+
+.ui-poptip-arrow-11 em,
+.ui-poptip-arrow-1 em {
+    border-width: 0 6px 6px;
+    border-bottom-color: #ffbb76;
+    top: -1px;
+    left: 0;
+}
+
+.ui-poptip-arrow-11 span,
+.ui-poptip-arrow-1 span {
+    border-width: 0 6px 6px;
+    border-bottom-color: #FFFCEF;
+}
+
 .ui-poptip-arrow-11 {
     left: 14px;
-    top: -10px;
-    top: -9px\0;
+    top: -6px;
 }
-
-.ui-poptip-arrow-11 em {
-    top: -1px;
-    left: 0;
-}
-/* ui-poptip-arrow-1 */
 .ui-poptip-arrow-1 {
     right: 28px;
-    top: -10px;
-    top: -9px\0;
+    top: -6px;
 }
 
-.ui-poptip-arrow-1 em {
-    top: -1px;
-    left: 0;
-}
-/* ui-poptip-arrow-7 */
-.ui-poptip-arrow-7 {
-    left: 14px;
-    bottom: 10px;
-}
+/* 箭头在下方 5 7 */
 
+.ui-poptip-arrow-5 em,
 .ui-poptip-arrow-7 em {
+    border-width: 6px 6px 0;
+    border-top-color: #ffbb76;
     top: 1px;
     left: 0;
 }
-/* ui-poptip-arrow-5 */
+
+.ui-poptip-arrow-5 span,
+.ui-poptip-arrow-7 span {
+    border-width: 6px 6px 0;
+    border-top-color: #FFFCEF;
+}
+
 .ui-poptip-arrow-5 {
     right: 28px;
-    bottom: 10px;
+    bottom: 0;
 }
 
-.ui-poptip-arrow-5 em {
-    top: 1px;
-    left: 0;
+.ui-poptip-arrow-7 {
+    left: 14px;
+    bottom: 0;
 }
 
 /* ie9 filter */
@@ -182,14 +215,40 @@ a.ui-poptip-close:hover {
     border: 1px solid #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow em {
-    color: #B9C8D3;
+.ui-poptip-blue .ui-poptip-arrow-10 em {
+    border-right-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-11 em,
+.ui-poptip-blue .ui-poptip-arrow-1 em {
+    border-bottom-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-2 em,
+.ui-poptip-blue .ui-poptip-arrow-4 em {
+    border-left-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-5 em,
+.ui-poptip-blue .ui-poptip-arrow-7 em {
+    border-top-color: #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow span {
-    color: #F8FCFF;
+.ui-poptip-blue .ui-poptip-arrow-10 span {
+    border-right-color: #F8FCFF;
 }
+.ui-poptip-blue .ui-poptip-arrow-11 span,
+.ui-poptip-blue .ui-poptip-arrow-1 span {
+    border-bottom-color: #F8FCFF;
+}
+.ui-poptip-blue .ui-poptip-arrow-2 span,
+.ui-poptip-blue .ui-poptip-arrow-4 span {
+    border-left-color: #F8FCFF;
+}
+.ui-poptip-blue .ui-poptip-arrow-5 span,
+.ui-poptip-blue .ui-poptip-arrow-7 span {
+    border-top-color: #F8FCFF;
+}
+
 /* 白色 */
+
 .ui-poptip-white {
     color: #333;
 }
@@ -204,10 +263,34 @@ a.ui-poptip-close:hover {
     border: 1px solid #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow em {
-    color: #b1b1b1;
+.ui-poptip-white .ui-poptip-arrow-10 em {
+    border-right-color: #b1b1b1;
+}
+.ui-poptip-white .ui-poptip-arrow-11 em,
+.ui-poptip-white .ui-poptip-arrow-1 em {
+    border-bottom-color: #b1b1b1;
+}
+.ui-poptip-white .ui-poptip-arrow-2 em,
+.ui-poptip-white .ui-poptip-arrow-4 em {
+    border-left-color: #b1b1b1;
+}
+.ui-poptip-white .ui-poptip-arrow-5 em,
+.ui-poptip-white .ui-poptip-arrow-7 em {
+    border-top-color: #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow span {
-    color: #fff;
+.ui-poptip-white .ui-poptip-arrow-10 span {
+    border-right-color: #fff;
+}
+.ui-poptip-white .ui-poptip-arrow-11 span,
+.ui-poptip-white .ui-poptip-arrow-1 span {
+    border-bottom-color: #fff;
+}
+.ui-poptip-white .ui-poptip-arrow-2 span,
+.ui-poptip-white .ui-poptip-arrow-4 span {
+    border-left-color: #fff;
+}
+.ui-poptip-white .ui-poptip-arrow-5 span,
+.ui-poptip-white .ui-poptip-arrow-7 span {
+    border-top-color: #fff;
 }

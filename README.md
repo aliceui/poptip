@@ -29,8 +29,8 @@
     <div class="ui-poptip-shadow">
         <div class="ui-poptip-container">
             <div class="ui-poptip-arrow ui-poptip-arrow-10">
-                <em>◆</em>
-                <span>◆</span>
+                <em></em>
+                <span></span>
             </div>
             <a href="javascript:;" class="ui-poptip-close">×</a>
             <div class="ui-poptip-content">
@@ -48,8 +48,8 @@
     <div class="ui-poptip-shadow">
         <div class="ui-poptip-container">
             <div class="ui-poptip-arrow ui-poptip-arrow-10">
-                <em>◆</em>
-                <span>◆</span>
+                <em></em>
+                <span></span>
             </div>
             <a href="javascript:;" class="ui-poptip-close">×</a>
             <div class="ui-poptip-content">
@@ -71,8 +71,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">    
         <div class="ui-poptip-arrow ui-poptip-arrow-10">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">
             我是内容我是内容我是内容我是内容我是内容我是内容
@@ -89,8 +89,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-2">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">
             我是内容我是内容我是内容我是内容我是内容我是内容
@@ -107,8 +107,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">
             我是内容我是内容我是内容我是内容我是内容我是内容
@@ -125,8 +125,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-1">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">
             我是内容我是内容我是内容我是内容我是内容我是内容
@@ -143,8 +143,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-5">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">
             我是内容我是内容我是内容我是内容我是内容我是内容
@@ -161,8 +161,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">
             我是内容我是内容我是内容我是内容我是内容我是内容
@@ -179,8 +179,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-10">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">我是内容我是内容我是内容我是内容我是内容我是内容</div>
     </div>
@@ -195,8 +195,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-5">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">我是内容我是内容我是内容我是内容我是内容我是内容</div>
     </div>
@@ -211,8 +211,8 @@
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">        
         <div class="ui-poptip-arrow ui-poptip-arrow-5">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content">我是内容我是内容我是内容我是内容我是内容我是内容</div>
     </div>
