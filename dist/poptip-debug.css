@@ -1,7 +1,5 @@
-/*! define alice/poptip/1.1.0/poptip-debug.css */
+/*! define alice/poptip/1.1.1/poptip-debug.css */
 /* alice.poptip 样式模块 */
-
-@charset "utf-8";
 
 .ui-poptip {
     color: #DB7C22;
@@ -89,7 +87,11 @@ a.ui-poptip-close:hover {
     *zoom: 1;
     width: 0;
     height: 0;
-    border-color: transparent;
+    /* 解决window下firefox的border渲染出深色边框的问题 */
+    /* http://stackoverflow.com/questions/13630886/firefox-17-and-css-borders-based-triangles-not-rendering-properly */
+    border-color: rgba(255, 255, 255, 0);
+    border-color: transparent\0;
+    *border-color: transparent;
     _border-color:tomato;
     _filter:chroma(color=tomato); /* http://blog.sina.com.cn/s/blog_6283c54a0100f7ae.html */
     border-style: solid;
