@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.0
+
+`tag:new` 增加 3 6 9 12 四个中点位置的[箭头](/#9%E7%82%B9%E9%92%9F%E4%BD%8D%E7%BD%AE)。
+
 ## 1.1.1
 
 `tag:fixed` 解决window下firefox的border渲染出深色边框的[问题](https://i.alipayobjects.com/e/201307/da3fFSyPP.jpg)。

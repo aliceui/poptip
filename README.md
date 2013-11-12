@@ -218,7 +218,7 @@
 </div>
 ````
 
-### 9 点钟位置
+### 9点钟位置
 
 ````html
 <div class="ui-poptip">
@@ -234,7 +234,7 @@
 </div>
 ````
 
-### 3 点钟位置蓝色
+### 3点钟位置蓝色
 
 ````html
 <div class="ui-poptip ui-poptip-blue">
@@ -250,7 +250,7 @@
 </div>
 ````
 
-### 12 点钟位置
+### 12点钟位置
 
 ````html
 <div class="ui-poptip">
@@ -266,7 +266,7 @@
 </div>
 ````
 
-### 6 点钟位置
+### 6点钟位置
 
 ````html
 <div class="ui-poptip">
