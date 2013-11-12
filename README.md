@@ -56,7 +56,7 @@
                 <div>
                     <a href="https://app.alipay.com/xxxx" target="_blank">现在使用</a>
                 </div>
-            </div>        
+            </div>
         </div>
     </div>
 </div>
@@ -67,7 +67,7 @@
 ````html
 <div class="ui-poptip">
     <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">    
+    <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-10">
             <em></em>
             <span></span>
@@ -85,7 +85,7 @@
 ````html
 <div class="ui-poptip">
     <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">        
+    <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-2">
             <em></em>
             <span></span>
@@ -207,7 +207,7 @@
 ````html
 <div class="ui-poptip ui-poptip-white">
     <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">        
+    <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-5">
             <em></em>
             <span></span>
@@ -218,3 +218,66 @@
 </div>
 ````
 
+### 9 点钟位置
+
+````html
+<div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-9">
+            <em></em>
+            <span></span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容<br>我是内容我是内容<br>我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+````
+
+### 3 点钟位置蓝色
+
+````html
+<div class="ui-poptip ui-poptip-blue">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-3">
+            <em></em>
+            <span></span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容<br>我是内容我是内容<br>我是内容我是内容<br>我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+````
+
+### 12 点钟位置
+
+````html
+<div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-12">
+            <em></em>
+            <span></span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+````
+
+### 6 点钟位置
+
+````html
+<div class="ui-poptip">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-6">
+            <em></em>
+            <span></span>
+        </div>
+        <div class="ui-poptip-content">我是内容我是内容我是内容我是内容</div>
+    </div>
+    </div>
+</div>
+````

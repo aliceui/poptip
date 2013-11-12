@@ -102,7 +102,7 @@ a.ui-poptip-close:hover {
 
 /* 箭头用 border 实现 http://www.css88.com/demo/border/border1.html */
 
-/* 箭头在左边 10 */
+/* 箭头在左边 10,9 */
 
 .ui-poptip-arrow-10 {
     left: -6px;
@@ -113,7 +113,7 @@ a.ui-poptip-close:hover {
     top: 0;
     left: -1px;
     border-right-color: #ffbb76;
-    border-width: 6px 6px 6px 0;    
+    border-width: 6px 6px 6px 0;
 }
 
 .ui-poptip-arrow-10 span {
@@ -121,7 +121,25 @@ a.ui-poptip-close:hover {
     border-width: 6px 6px 6px 0;
 }
 
-/* 箭头在右边 2 */
+.ui-poptip-arrow-9 {
+    left: -6px;
+    top: 50%;
+}
+
+.ui-poptip-arrow-9 em {
+    top: -6px;
+    left: -1px;
+    border-right-color: #ffbb76;
+    border-width: 6px 6px 6px 0;
+}
+
+.ui-poptip-arrow-9 span {
+    top: -6px;
+    border-right-color: #FFFCEF;
+    border-width: 6px 6px 6px 0;
+}
+
+/* 箭头在右边 2,3 */
 
 .ui-poptip-arrow-2 {
     top: 10px;
@@ -140,15 +158,28 @@ a.ui-poptip-close:hover {
     border-width: 6px 0 6px 6px;
 }
 
-/* ui-poptip-arrow-11 */
-.ui-poptip-arrow-11 em,
-.ui-poptip-arrow-11 span {
-
+.ui-poptip-arrow-3 {
+    top: 50%;
+    right: 0;
 }
 
-/* 箭头在上边 1 11 */
+.ui-poptip-arrow-3 em {
+    top: -6px;
+    left: 1px;
+    border-left-color: #ffbb76;
+    border-width: 6px 0 6px 6px;
+}
+
+.ui-poptip-arrow-3 span {
+    top: -6px;
+    border-left-color: #FFFCEF;
+    border-width: 6px 0 6px 6px;
+}
+
+/* 箭头在上边 11,12,1 */
 
 .ui-poptip-arrow-11 em,
+.ui-poptip-arrow-12 em,
 .ui-poptip-arrow-1 em {
     border-width: 0 6px 6px;
     border-bottom-color: #ffbb76;
@@ -157,6 +188,7 @@ a.ui-poptip-close:hover {
 }
 
 .ui-poptip-arrow-11 span,
+.ui-poptip-arrow-12 span,
 .ui-poptip-arrow-1 span {
     border-width: 0 6px 6px;
     border-bottom-color: #FFFCEF;
@@ -166,14 +198,26 @@ a.ui-poptip-close:hover {
     left: 14px;
     top: -6px;
 }
+
 .ui-poptip-arrow-1 {
     right: 28px;
     top: -6px;
 }
 
-/* 箭头在下方 5 7 */
+.ui-poptip-arrow-12 {
+    left: 50%;
+    top: -6px;
+}
+
+.ui-poptip-arrow-12 em,
+.ui-poptip-arrow-12 span {
+    left: -6px;
+}
+
+/* 箭头在下方 5 6 7 */
 
 .ui-poptip-arrow-5 em,
+.ui-poptip-arrow-6 em,
 .ui-poptip-arrow-7 em {
     border-width: 6px 6px 0;
     border-top-color: #ffbb76;
@@ -182,6 +226,7 @@ a.ui-poptip-close:hover {
 }
 
 .ui-poptip-arrow-5 span,
+.ui-poptip-arrow-6 span,
 .ui-poptip-arrow-7 span {
     border-width: 6px 6px 0;
     border-top-color: #FFFCEF;
@@ -192,9 +237,19 @@ a.ui-poptip-close:hover {
     bottom: 0;
 }
 
+.ui-poptip-arrow-6 {
+    left: 50%;
+    bottom: 0;
+}
+
 .ui-poptip-arrow-7 {
     left: 14px;
     bottom: 0;
+}
+
+.ui-poptip-arrow-6 em,
+.ui-poptip-arrow-6 span {
+    left: -6px;
 }
 
 /* ie9 filter */
@@ -217,34 +272,40 @@ a.ui-poptip-close:hover {
     border: 1px solid #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow-10 em {
+.ui-poptip-blue .ui-poptip-arrow-10 em, 
+.ui-poptip-blue .ui-poptip-arrow-9 em {
     border-right-color: #B9C8D3;
 }
 .ui-poptip-blue .ui-poptip-arrow-11 em,
+.ui-poptip-blue .ui-poptip-arrow-12 em,
 .ui-poptip-blue .ui-poptip-arrow-1 em {
     border-bottom-color: #B9C8D3;
 }
 .ui-poptip-blue .ui-poptip-arrow-2 em,
-.ui-poptip-blue .ui-poptip-arrow-4 em {
+.ui-poptip-blue .ui-poptip-arrow-3 em {
     border-left-color: #B9C8D3;
 }
 .ui-poptip-blue .ui-poptip-arrow-5 em,
+.ui-poptip-blue .ui-poptip-arrow-6 em,
 .ui-poptip-blue .ui-poptip-arrow-7 em {
     border-top-color: #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow-10 span {
+.ui-poptip-blue .ui-poptip-arrow-10 span,
+.ui-poptip-blue .ui-poptip-arrow-9 span {
     border-right-color: #F8FCFF;
 }
 .ui-poptip-blue .ui-poptip-arrow-11 span,
+.ui-poptip-blue .ui-poptip-arrow-12 span,
 .ui-poptip-blue .ui-poptip-arrow-1 span {
     border-bottom-color: #F8FCFF;
 }
 .ui-poptip-blue .ui-poptip-arrow-2 span,
-.ui-poptip-blue .ui-poptip-arrow-4 span {
+.ui-poptip-blue .ui-poptip-arrow-3 span {
     border-left-color: #F8FCFF;
 }
 .ui-poptip-blue .ui-poptip-arrow-5 span,
+.ui-poptip-blue .ui-poptip-arrow-6 span,
 .ui-poptip-blue .ui-poptip-arrow-7 span {
     border-top-color: #F8FCFF;
 }
@@ -265,34 +326,40 @@ a.ui-poptip-close:hover {
     border: 1px solid #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow-10 em {
+.ui-poptip-white .ui-poptip-arrow-10 em,
+.ui-poptip-white .ui-poptip-arrow-9 em {
     border-right-color: #b1b1b1;
 }
 .ui-poptip-white .ui-poptip-arrow-11 em,
+.ui-poptip-white .ui-poptip-arrow-12 em,
 .ui-poptip-white .ui-poptip-arrow-1 em {
     border-bottom-color: #b1b1b1;
 }
 .ui-poptip-white .ui-poptip-arrow-2 em,
-.ui-poptip-white .ui-poptip-arrow-4 em {
+.ui-poptip-white .ui-poptip-arrow-3 em {
     border-left-color: #b1b1b1;
 }
 .ui-poptip-white .ui-poptip-arrow-5 em,
+.ui-poptip-white .ui-poptip-arrow-6 em,
 .ui-poptip-white .ui-poptip-arrow-7 em {
     border-top-color: #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow-10 span {
+.ui-poptip-white .ui-poptip-arrow-10 span,
+.ui-poptip-white .ui-poptip-arrow-9 span {
     border-right-color: #fff;
 }
 .ui-poptip-white .ui-poptip-arrow-11 span,
+.ui-poptip-white .ui-poptip-arrow-12 span,
 .ui-poptip-white .ui-poptip-arrow-1 span {
     border-bottom-color: #fff;
 }
 .ui-poptip-white .ui-poptip-arrow-2 span,
-.ui-poptip-white .ui-poptip-arrow-4 span {
+.ui-poptip-white .ui-poptip-arrow-3 span {
     border-left-color: #fff;
 }
 .ui-poptip-white .ui-poptip-arrow-5 span,
+.ui-poptip-white .ui-poptip-arrow-6 span,
 .ui-poptip-white .ui-poptip-arrow-7 span {
     border-top-color: #fff;
 }
